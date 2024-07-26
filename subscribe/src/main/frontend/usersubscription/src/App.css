@@ -1,0 +1,83 @@
+/* 사용자 목록의 컨테이너 스타일 */
+.user-list-container {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 제목 스타일 */
+.user-list-container h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* 사용자 리스트 항목 스타일 */
+.user-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.user-list-item:last-child {
+  border-bottom: none;
+}
+
+/* 사용자 정보 스타일 */
+.user-info {
+  flex: 1;
+}
+
+.user-info .name {
+  font-weight: bold;
+}
+
+.user-info .subscription-status {
+  color: #555;
+}
+
+/* 구독 버튼 스타일 */
+.subscribe-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-button:hover {
+  background-color: #0056b3;
+}
+
+.subscribe-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* 구독 취소 버튼 스타일 */
+.unsubscribe-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+.unsubscribe-button:hover {
+  background-color: #c82333;
+}
+
+.unsubscribe-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
